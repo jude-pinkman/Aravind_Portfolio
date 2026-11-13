@@ -78,6 +78,9 @@ h1 span:nth-child(2) b{animation-delay:.12s;background:linear-gradient(100deg,va
 .jobs{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
 .job{background:var(--panel);border:1px solid var(--line);border-radius:22px;padding:34px;transition:transform .3s,border-color .3s,box-shadow .3s}
 .job:hover{transform:translateY(-6px);border-color:var(--acc);box-shadow:0 24px 50px -24px var(--glow)}
+.job.featured{grid-column:1/-1;display:grid;grid-template-columns:1fr 1.25fr;gap:32px;align-items:center;padding:28px}
+.job-media{width:100%;height:100%;min-height:280px;border-radius:16px;overflow:hidden;background:var(--bg)}
+.job-media img{width:100%;height:100%;object-fit:cover;object-position:center 35%;display:block}
 .job .k{font:600 13px "Bricolage Grotesque",sans-serif;letter-spacing:.1em;text-transform:uppercase;color:var(--acc2);margin-bottom:10px}
 .job h3{font:700 32px/1.1 "Bricolage Grotesque",sans-serif;letter-spacing:-.03em;margin:0 0 6px}
 .job small{font-size:15px;color:var(--mute);display:block;margin-bottom:18px}
@@ -139,6 +142,8 @@ nav{display:none}
 .about,.int,.jobs,.sk{grid-template-columns:1fr}
 .about,.int{gap:32px}
 .job{padding:26px}
+.job.featured{grid-template-columns:1fr;gap:20px;padding:22px}
+.job.featured .job-media{min-height:220px;max-height:280px}
 .end{padding-top:72px;margin-top:80px}
 }
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}h1 span b,.mq div,.role i{animation:none}.rv{opacity:1;transform:none;transition:none}.job,.int li{transition:none}}
@@ -146,7 +151,7 @@ nav{display:none}
 </head>
 <body>
 <header><div class="w"><a class="logo" href="#top"><i></i>Aravind M</a>
-<nav aria-label="Sections"><a href="#about">About</a><a href="#work">Work</a><a href="#education">Education</a><a href="#skills">Skills</a><a href="#interests">Interests</a></nav>
+<nav aria-label="Sections"><a href="#about">About</a><a href="#work">Projects</a><a href="#education">Education</a><a href="#skills">Skills</a><a href="#interests">Interests</a></nav>
 <div class="hr"><button class="tg" id="tg" aria-label="Toggle light or dark theme">◐</button><a class="pill" href="#contact">Let’s connect</a></div></div></header>
 
 <main>
@@ -156,7 +161,7 @@ nav{display:none}
 <p class="role"><i></i>Business student &amp; photographer</p>
 <h1><span><b>Aravind</b></span><span><b>M.</b></span></h1>
 <p class="lead">Exploring the intersection of creativity, business and community.</p>
-<div class="cta"><a class="btn p" href="#work">View my work</a><a class="btn g" href="#contact">Get in touch</a></div>
+<div class="cta"><a class="btn p" href="#work">View projects</a><a class="btn g" href="#contact">Get in touch</a></div>
 <div class="facts">
 <div><b>Erode</b>Tamil Nadu, India</div>
 <div><b>BBA (Hons.)</b>Manipal Bengaluru</div>
@@ -183,8 +188,18 @@ nav{display:none}
 <p>I bring discipline, perseverance, focus and a competitive mindset to everything I do. I’m a motivated, adaptable and enthusiastic learner, eager to gain new experiences and develop my professional skills.</p>
 </div></div></section>
 
-<section class="row rv" id="work"><p class="eye">02 · Work &amp; service</p>
+<section class="row rv" id="work"><p class="eye">02 · Projects worked on</p>
 <div class="jobs">
+<div class="job featured">
+<div class="job-media"><img src="milky-mist.webp" alt="Milky Mist – Erode Plant"></div>
+<div class="job-body">
+<div class="k">Trainee · Marketing</div>
+<h3>Milky Mist – Erode</h3>
+<small>Branding &amp; Marketing Trainee</small>
+<p>Worked as a Branding and Marketing Trainee, gaining hands-on experience in brand promotion, marketing strategies, customer engagement, and market research.</p>
+<div class="tags"><span>Brand Promotion</span><span>Marketing Strategies</span><span>Customer Engagement</span><span>Market Research</span></div>
+</div>
+</div>
 <div class="job"><div class="k">Internship</div><h3>RCI Specialities Limited</h3><small>Professional experience</small>
 <p>Gained valuable exposure to a professional work environment and practical business operations.</p>
 <div class="tags"><span>Business operations</span><span>Learning</span><span>Professional development</span></div></div>
