@@ -81,6 +81,8 @@ h1 span:nth-child(2) b{animation-delay:.12s;background:linear-gradient(100deg,va
 .job.featured{grid-column:1/-1;display:grid;grid-template-columns:1fr 1.25fr;gap:32px;align-items:center;padding:28px}
 .job-media{width:100%;height:100%;min-height:280px;border-radius:16px;overflow:hidden;background:var(--bg)}
 .job-media img{width:100%;height:100%;object-fit:cover;object-position:center 35%;display:block}
+.job-media.logo-media{width:100%;height:160px;min-height:160px;border-radius:16px;display:flex;align-items:center;justify-content:center;background:radial-gradient(circle,rgba(245,158,11,.12) 0%,rgba(245,158,11,.03) 70%);border:1px solid var(--line);margin-bottom:22px}
+.job-media.logo-media img{width:105px;height:105px;object-fit:contain;filter:drop-shadow(0 6px 16px rgba(245,158,11,.25))}
 .job .k{font:600 13px "Bricolage Grotesque",sans-serif;letter-spacing:.1em;text-transform:uppercase;color:var(--acc2);margin-bottom:10px}
 .job h3{font:700 32px/1.1 "Bricolage Grotesque",sans-serif;letter-spacing:-.03em;margin:0 0 6px}
 .job small{font-size:15px;color:var(--mute);display:block;margin-bottom:18px}
@@ -203,7 +205,9 @@ nav{display:none}
 <div class="job"><div class="k">Internship</div><h3>RCI Specialities Limited</h3><small>Professional experience</small>
 <p>Gained valuable exposure to a professional work environment and practical business operations.</p>
 <div class="tags"><span>Business operations</span><span>Learning</span><span>Professional development</span></div></div>
-<div class="job"><div class="k">Volunteer</div><h3>Rotary Club of Erode</h3><small>Community service</small>
+<div class="job">
+<div class="job-media logo-media"><img src="rotary-logo.png" alt="Rotary Club of Erode"></div>
+<div class="k">Volunteer</div><h3>Rotary Club of Erode</h3><small>Community service</small>
 <p>Participated in social welfare activities and environmental projects, developing teamwork and a commitment to the community.</p>
 <div class="tags"><span>Community service</span><span>Teamwork</span><span>Environment</span></div></div>
 </div></section>
